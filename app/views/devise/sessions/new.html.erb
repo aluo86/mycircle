@@ -1,0 +1,32 @@
+<br />
+<div class="row">
+	<div class="span4">
+	<%= simple_form_for(resource, :as => resource_name, :url => session_path(resource_name), html: {class: "well form-vertical well-small"}) do |f| %>
+
+		<fieldset>
+			<legend>Sign In</legend>
+			<%= f.input :email %>
+			<%= f.input :password %>
+
+	  	<% if devise_mapping.rememberable? -%>
+	    	<%= f.input :remember_me, as: :boolean, inline_label: "Remember Me", label: false %>
+	  	<% end -%>
+
+	  	<%= f.button :submit, "Sign In", class: 'btn btn-primary btn-block' %>
+		</fieldset>
+	<% end %>
+
+	</div>
+
+	<div class="span8">
+		<h2>Welcome to Andrew's family book</h2>
+		<h3>A private place for Andrew's family and friend only!</h3>
+		<p>
+			<%= image_tag "https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-prn2/172615_10150141613285579_8373173_o.jpg", class: 'pull-right' %>
+			Andrew was born and raised in China and have been in the States for over 15 years. Andrew married with Nancy two years ago and have a beautiful daughter.
+
+			Andrew is working at Netflix now and he is interesting in web technology.
+		</p>
+		<%= render "devise/shared/links" %>
+	</div>
+</div>

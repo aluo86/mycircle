@@ -1,0 +1,24 @@
+andrew:
+  first_name: "Andrew"
+  last_name: "Luo"
+  email: "andrewluo@gmail.com"
+  profile_name: "aluo"
+  encrypted_password: "$2a$10$Fh/Hm8RxDsuPTeBUr6864.GARlcmt7zF2WspaXGr3BIv2C27N.osq"
+
+yimin:
+  first_name: "Yimin"
+  last_name: "Luo"
+  email: "yiminluo@gmail.com"
+  profile_name: "yluo"
+
+nancy:
+  first_name: "Nancy"
+  last_name: "Qi"
+  email: "fgqi10@gmail.com"
+  profile_name: "nqi"
+
+blocked_friend:
+  first_name: 'Blocked'
+  last_name: 'Friend'
+  email: 'blocked@gmail.com'
+  profile_name: 'youblockedme'
